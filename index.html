@@ -3,100 +3,304 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dave 1991</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@10..48&family=Montserrat+Alternates&family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Dawit Tefera</title>
   </head>
   <body>
     <div class="main-container">
-      <div class="nav-bar">
-        <div class="logo">
-          <h1>D</h1>
-          <span>ave</span>
-        </div>
-        <div class="links">
-          <a
-            href="https://www.linkedin.com/in/dawit-tefera-6b9496136/"
-            target="_blank"
-            ><img
-              id="ico1"
-              src="./assets/icons/linkedin-dark.png"
-              alt="linkedin"
-              height="30"
-          /></a>
-          <a href="https://github.com/tevBoyz" target="_blank"
-            ><img
-              id="ico2"
-              src="./assets/icons/github-dark.png"
-              alt="linkedin"
-              height="30"
-          /></a>
-          <a
-            href="https://drive.google.com/file/d/1rT9RZrovvPdniI_pntcJqKPuuR8Ytvs_/view?usp=drive_link"
-            target="_blank"
-            ><img
-              id="ico3"
-              src="./assets/icons/cv-dark.png"
-              alt="linkedin"
-              height="30"
-          /></a>
-          <a href="mailto:dawit.ttamiru@gmail.com"
-            ><img
-              id="ico4"
-              src="./assets/icons/gmail-dark.png"
-              alt="linkedin"
-              height="30"
-          /></a>
-        </div>
+      <div class="left-nav">
+        <a href="#hero-section" onclick="navClick('hero')" id="hero">
+          <img
+            src="./assets/icons/home-light.png"
+            alt="Home icon"
+            height="40"
+          />
+          <span>Home</span>
+        </a>
+        <a
+          href="#about-section"
+          onclick="navClick('about')"
+          class="about"
+          id="about"
+        >
+          <img
+            src="./assets/icons/about-light.png"
+            alt="About image"
+            height="40"
+          />
+          <span>About</span>
+        </a>
+        <a
+          href="#projects-section"
+          onclick="navClick('project')"
+          class="project"
+          id="project"
+        >
+          <img
+            src="./assets/icons/projects-light.png"
+            alt="Projects image"
+            height="40"
+          />
+          <span>Projects</span>
+        </a>
+        <a
+          href="#contact-section"
+          onclick="navClick('contact')"
+          class="contact"
+          id="contact"
+        >
+          <img
+            src="./assets/icons/contact-light.png"
+            alt="Contact image"
+            height="40"
+          />
+          <span>Contact Me</span>
+        </a>
       </div>
-
-      <div class="content-div">
-        <div class="left-side">
-          <h1>Welcome</h1>
-          <p>
-            Front End Developer with solid experience in the software
-            development industry. I am Skilled in multiple Web Development
-            tools, JavaScript, C#, and SQL. Additionally experienced in mobile
-            app development in Java and Flutter. Also a strong engineering
-            professional with a Bachelor's degree in Electrical and Computer
-            Engineering from Addis Ababa University
+      <div id="right-content" class="right-content">
+        <section id="hero-section" class="hero-section">
+          <h1 id="name">I'm Dawit Tefera</h1>
+          <h3 id="title-occupation">I am a Web Developer</h3>
+          <div class="avatar"></div>
+        </section>
+        <section id="about-section" class="about-section">
+          <h2>About me:</h2>
+          <div class="hrouter">
+            <div class="line"></div>
+          </div>
+          <p id="short-bio">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ex
+            nihil possimus error ut eaque voluptate dolorum labore voluptates
+            enim? Aut non quo doloribus aliquid veritatis alias recusandae
+            quisquam facere.Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Odit ex nihil possimus error ut eaque voluptate dolorum labore
+            voluptates enim? Aut non quo doloribus aliquid veritatis alias
+            recusandae quisquam facere.Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Odit ex nihil possimus error ut eaque voluptate
+            dolorum labore voluptates enim? Aut non quo doloribus aliquid
+            veritatis alias recusandae quisquam facere.Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Odit ex nihil possimus error ut
+            eaque voluptate dolorum labore voluptates enim? Aut non quo
+            doloribus aliquid veritatis alias recusandae quisquam facere.Lorem
+            ipsum dolor sit amet consectetur adipisicing elit. Odit ex nihil
+            possimus error ut eaque voluptate dolorum labore voluptates enim?
+            Aut non quo doloribus aliquid veritatis alias recusandae quisquam
+            facere.Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+            ex nihil possimus error ut eaque voluptate dolorum labore voluptates
+            enim? Aut non quo doloribus aliquid veritatis alias recusandae
+            quisquam facere.Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Odit ex nihil possimus error ut eaque voluptate dolorum labore
+            voluptates enim? Aut non quo doloribus aliquid veritatis alias
+            recusandae quisquam facere.
           </p>
-        </div>
-        <div class="right-side">
-          <h1>Projects</h1>
-          <ul>
-            <li>
-              <a href="https://tevboyz.github.io/tic-tac-toe/" target="_blank"
-                >Tick Tac Toe</a
-              >
-            </li>
-            <li>
-              <a href="https://tevboyz.github.io/todo/" target="_blank"
-                >To Do List</a
-              >
-            </li>
-            <li>
-              <a href="https://tevboyz.github.io/chatapp/" target="_blank"
-                >Chat app</a
-              >
-            </li>
-            <li>
-              <a href="https://tevboyz.github.io/DigitalClock/" target="_blank"
-                >Digital Clock</a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="copyright">
-        <h3>©copyright dave1991</h3>
+          <h3>My Skills:</h3>
+          <div class="hrouter">
+            <div class="line"></div>
+          </div>
+          <p>Front End</p>
+          <div class="outer">
+            <div class="inner" style="width: 95%"></div>
+          </div>
+          <p>Back End</p>
+          <div class="outer">
+            <div class="inner" style="width: 75%"></div>
+          </div>
+          <p>Other Programming Languages</p>
+          <div class="outer">
+            <div class="inner" style="width: 80%"></div>
+          </div>
+          <div class="button-container">
+            <button
+              onclick="downloadResume()"
+              id="download-resume"
+              class="download-resume"
+            >
+              <img
+                src="./assets/icons/cv-light.png"
+                alt="CV icon"
+                height="30px"
+              />
+              <span>View/Download Resume</span>
+            </button>
+          </div>
+        </section>
+        <section id="projects-section" class="projects-section">
+          <h2>My Projects</h2>
+          <div class="hrouter">
+            <div class="line"></div>
+          </div>
+          <h3>Work Projects</h3>
+          <div class="hrouter">
+            <div class="line" style="width: 100px"></div>
+          </div>
+          <div class="games-list">
+            <a
+              href="https://www.youtube.com/watch?v=AligykI4E4A&list=PLkZ6QcbNoWfj_m7UwrCsfb_Cd1QQM_8YN"
+              target="_blank"
+              class="projcard"
+            >
+              <div class="image-snapshot">
+                <img src="./assets/leyu.png" alt="Leyu Tune Image" />
+              </div>
+              <div class="details">
+                <h4 id="title">Leyu Tune</h4>
+                <p id="description">
+                  This is the very first project I did for work. I created a
+                  game for show. And also run the program from the back as the
+                  admin. The show ran for 2 years. The link will take you to the
+                  Youtube channel.
+                </p>
+              </div>
+            </a>
+          </div>
+          <h3>Miscellaneous</h3>
+          <div class="hrouter">
+            <div class="line" style="width: 100px"></div>
+          </div>
+          <div class="games-list">
+            <a
+              href="https://tevboyz.github.io/Hangmann/"
+              target="_blank"
+              class="projcard"
+            >
+              <div class="image-snapshot">
+                <img src="./assets/quotes.png" alt="Quotes Image" />
+              </div>
+              <div class="details">
+                <h4 id="title">Quotes</h4>
+                <p id="description">
+                  A simple site that is used to share quotes. This uses the
+                  firebase DB to store data. This is the first project I used to
+                  interact with a remote DB.
+                </p>
+              </div>
+            </a>
+            <a
+              href="https://tevboyz.github.io/todo/"
+              target="_blank"
+              class="projcard"
+            >
+              <div class="image-snapshot">
+                <img src="./assets/todo.png" alt="Numbers Image" />
+              </div>
+              <div class="details">
+                <h4 id="title">My To do list</h4>
+                <p id="description">
+                  This is one if the fist projects I created when I was studying
+                  React. I used DOM manipulation to make it work.
+                </p>
+              </div>
+            </a>
+          </div>
+          <h3>Games</h3>
+          <div class="hrouter">
+            <div class="line" style="width: 100px"></div>
+          </div>
+          <div class="games-list">
+            <a
+              href="https://tevboyz.github.io/Hangmann/"
+              target="_blank"
+              class="projcard"
+            >
+              <div class="image-snapshot">
+                <img src="./assets/hangmann.png" alt="Hangmann Image" />
+              </div>
+              <div class="details">
+                <h4 id="title">hangmann</h4>
+                <p id="description">
+                  A classic game of hangman. players have to guess the word
+                  before the man is hanged. I used a free API to generate a word
+                  for each instance. This is the first project I connected to an
+                  API and I have learned a lot from it.
+                </p>
+              </div>
+            </a>
+            <a
+              href="https://tevboyz.github.io/Numbers/"
+              target="_blank"
+              class="projcard"
+            >
+              <div class="image-snapshot">
+                <img src="./assets/numbers.png" alt="Numbers Image" />
+              </div>
+              <div class="details">
+                <h4 id="title">Numbers - (4 Digit)</h4>
+                <p id="description">
+                  This game initally holds a 4 digit number, then the player can
+                  start guessing. The game will tell which numbers the player
+                  has got and of those which digits are in the correct position.
+                  The user have to deduce and find the number to win. On this
+                  project, I was able to teach myself on basic CSS and script
+                  logics.
+                </p>
+              </div>
+            </a>
+            <a
+              href="https://tevboyz.github.io/tic-tac-toe/"
+              target="_blank"
+              class="projcard"
+            >
+              <div class="image-snapshot">
+                <img src="./assets/tictacto.png" alt="TicTacToe Image" />
+              </div>
+              <div class="details">
+                <h4 id="title">Tic-Tac-Toe</h4>
+                <p id="description">
+                  A simple game of tic tac toe witht the computer. I tried to
+                  show my design skills on this project. I have done basic DOM
+                  manipulation to achieve this. This is one of my first projects
+                  I did after learning HTML, CSS and JS.
+                </p>
+              </div>
+            </a>
+            <a
+              href="https://tevboyz.github.io/Sort-the-numbers/"
+              target="_blank"
+              class="projcard"
+            >
+              <div class="image-snapshot">
+                <img
+                  src="./assets/sort the numbers.png"
+                  alt="Sort-the-numbers Image"
+                />
+              </div>
+              <div class="details">
+                <h4 id="title">Sort The Numbers</h4>
+                <p id="description">
+                  This is a game that challenges player to predict the upcoming
+                  numbers order and place them in the given slot on the bottom.
+                  I have been able to demonstrate my designa and css skill on
+                  this game. I have learned responsiveness during this section.
+                </p>
+              </div>
+            </a>
+            <a
+              href="https://tevboyz.github.io/find-the-difference/"
+              target="_blank"
+              class="projcard"
+            >
+              <div class="image-snapshot">
+                <img
+                  src="./assets/find the different box.png"
+                  alt="find-the-difference Image"
+                />
+              </div>
+              <div class="details">
+                <h4 id="title">Find the different box</h4>
+                <p id="description">
+                  This game tests the sight of the player. The boxes have same
+                  shade of color, excerpt for one. the user need to idetify the
+                  unique one and click on it. As the level goes up the unique
+                  box gets harder to see. If the user clicks on th wrong box the
+                  game is over.
+                </p>
+              </div>
+            </a>
+          </div>
+        </section>
+        <section id="contact-section" class="contact-section"></section>
       </div>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
