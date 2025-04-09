@@ -1,53 +1,38 @@
-const resume_link = "https://1drv.ms/b/s!AiFDBXk1dRWvgcAa2pMNUt2I1qJ4aw?e=TnBc9P";
+const resume_link =
+        "https://1drv.ms/b/c/af15753579054321/EfD_giNQo1VMg5atENovlL8BUetfQ1ESoq0q12XHlrR5tQ?e=4ALhMh";
 
-function downloadResume(){
-    
-    window.open(resume_link, '_blank');
-}
+      function downloadResume() {
+        window.open(resume_link, "_blank");
+      }
 
-function navClick(id){
-    let home = document.getElementById('hero');
-    let about = document.getElementById('about');
-    let project = document.getElementById('project');
-    let contact = document.getElementById('contact');
+      function navClick(id) {
+        // Update active nav item
+        document.querySelectorAll(".nav-item").forEach((item) => {
+          item.classList.remove("active");
+        });
+        document.querySelector(`a[href="#${id}"]`).classList.add("active");
 
-    switch(id){
-        case 'hero':
-            contact.style.backgroundColor = 'transparent'
-            about.style.backgroundColor = 'transparent'
-            project.style.backgroundColor = 'transparent'
-            home.style.backgroundColor = 'black'
-            break;
-        
-        case 'about':
-            contact.style.backgroundColor = 'transparent'
-            about.style.backgroundColor = 'black'
-            project.style.backgroundColor = 'transparent'
-            home.style.backgroundColor = 'transparent'
-            break;
+        // Scroll to section
+        document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+      }
 
-        case 'project':
-            contact.style.backgroundColor = 'transparent'
-            about.style.backgroundColor = 'transparent'
-            project.style.backgroundColor = 'black'
-            home.style.backgroundColor = 'transparent'
-            break;
+      // Highlight nav item based on scroll position
+      window.addEventListener("scroll", () => {
+        const sections = ["hero", "about", "projects", "contact"];
+        const scrollPosition = window.scrollY + 100;
 
-        case 'contact':
-            contact.style.backgroundColor = 'black'
-            about.style.backgroundColor = 'transparent'
-            project.style.backgroundColor = 'transparent'
-            home.style.backgroundColor = 'transparent'
-            break;
-
-        default:
-            contact.style.backgroundColor = 'transparent'
-            about.style.backgroundColor = 'transparent'
-            project.style.backgroundColor = 'transparent'
-            home.style.backgroundColor = 'black'
-            break;
-    }
-}
-
-
-navClick('hero');
+        sections.forEach((section) => {
+          const element = document.getElementById(section);
+          if (
+            element.offsetTop <= scrollPosition &&
+            element.offsetTop + element.offsetHeight > scrollPosition
+          ) {
+            document.querySelectorAll(".nav-item").forEach((item) => {
+              item.classList.remove("active");
+            });
+            document
+              .querySelector(`a[href="#${section}"]`)
+              .classList.add("active");
+          }
+        });
+      });
